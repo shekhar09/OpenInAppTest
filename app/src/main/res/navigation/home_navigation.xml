@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.shekhar.kotlin.ui.link.LinkFragment"
+        android:label="Fragment 1"
+        tools:layout="@layout/fragment_link" />
+
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.shekhar.kotlin.ui.course.CourseFragment"
+        android:label="Fragment 2"
+        tools:layout="@layout/fragment_course" />
+
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.shekhar.kotlin.ui.campaign.CampaignFragment"
+        android:label="Fragment 3"
+        tools:layout="@layout/fragment_campaign" />
+
+
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.shekhar.kotlin.ui.profile.ProfileFragment"
+        android:label="Fragment 4"
+        tools:layout="@layout/fragment_profile" />
+
+
+</navigation>

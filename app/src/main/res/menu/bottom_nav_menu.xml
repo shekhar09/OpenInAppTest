@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/link"
+        android:icon="@drawable/ic_link"
+        android:title="@string/link"/>
+
+    <item
+        android:id="@+id/courses"
+        android:icon="@drawable/ic_book"
+        android:title="@string/courses"/>
+
+    <item
+        android:id="@+id/placeholer"
+        android:title="" />
+
+    <item
+        android:id="@+id/campaign"
+        android:icon="@drawable/ic_media"
+        android:title="@string/campaign"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile"/>
+
+
+
+
+</menu>

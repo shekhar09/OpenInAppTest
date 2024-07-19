@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationHost"
+        android:layout_above="@id/bottomAppBar"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/home_navigation"
+        />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomAppBar"
+        android:layout_gravity="bottom"
+        app:contentInsetStart="0dp"
+        app:fabCradleMargin="0dp"
+        app:fabCradleRoundedCornerRadius="0dp"
+        app:fabCradleVerticalOffset="0dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:id="@+id/bottomNavigationView"
+            app:menu="@menu/bottom_nav_menu"
+            app:itemTextAppearanceActive="@style/BottomNavigation.ActiveItemTextAppearance"
+            app:itemTextAppearanceInactive="@style/BottomNavigation.InActiveItemTextAppearance"
+            app:labelVisibilityMode="labeled"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:background="@android:color/transparent"
+
+            />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_union"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="54dp"
+        android:elevation="2dp"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/fab"
+        app:tint="@color/white"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/background"
+        android:layout_gravity="center|bottom"
+        android:src="@drawable/ic_add"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

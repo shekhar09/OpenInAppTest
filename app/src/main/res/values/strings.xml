@@ -1,28 +1,28 @@
 <resources>
-    <string name="app_name">Boilerplate</string>
+    <string name="app_name">OpenInApp</string>
     <string name="hello_msg_from_activity">Hello From Activity!</string>
     <string name="hello_msg_from_fragment">Hello From Fragment!</string>
 
 
-    <string name="network_connection_error">Internet connection lost, please retry again</string>
-    <string name="network_default_error">Something wrong happened, please retry again</string>
-    <string name="network_internal_error">Our systems got an error, please retry again</string>
-    <string name="network_server_not_available">Our services are under maintenance, please retry after some time
-    </string>
-    <string name="server_connection_error">Not able to connect, please retry again</string>
-    <string name="network_login_again">Please log in again</string>
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="network_error">Network error, could get data,please try again!</string>
+    <string name="link">Link</string>
+    <string name="courses">Courses</string>
+    <string name="campaign">Campaigns</string>
+    <string name="profile">Profile</string>
 
-    <!--login-->
-    <string name="email_field_hint">Enter your email</string>
-    <string name="password_field_hint">Enter your password</string>
-    <string name="name_field_hint">Enter your name</string>
-    <string name="email_field_empty">Email can\'t be empty</string>
-    <string name="password_field_empty">Password can\'t be empty</string>
-    <string name="name_field_empty">Name can\'t be empty</string>
-    <string name="email_field_invalid">Not a valid email</string>
-    <string name="password_field_small_length">Password less than 6 digits</string>
-    <string name="login_button_text">Login</string>
-    <string name="signup_button_text_2">Signup</string>
-    <string name="signup_button_text">Need new account?  Signup</string>
-    <string name="login_button_text_2">Already have account?  Login</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="overview">Overview</string>
+    <string name="today_clicks">Today’s clicks</string>
+    <string name="top_location">Top Location</string>
+    <string name="top_source">Top source</string>
+    <string name="best_time">Best Time</string>
+    <string name="view_analytics">View Analytics</string>
+    <string name="top_links">Top Links</string>
+    <string name="recent_links">Recent Links</string>
+    <string name="view_all_links">View all Links</string>
+    <string name="talk_with_us">Talk with us</string>
+    <string name="frequently_asked_questions">Frequently Asked Questions</string>
 </resources>

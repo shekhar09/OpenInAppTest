@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_item"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    android:padding="16dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="24dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/layout_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="8dp"
+                android:background="@drawable/bg_rounded_border_item">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/iv_item"
+                    tools:src="@drawable/ic_whatsapp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_details"
+                android:layout_toEndOf="@+id/layout_image"
+                android:layout_toStartOf="@+id/layout_clicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:lineHeight="12sp"
+                    android:textColor="#000000"
+                    android:text="Sample link name..."
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:maxLength="30"
+                    android:lineSpacingExtra="-2sp"
+                    android:fontFamily="@font/figtree_regular"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_date"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#999CA0"
+                    android:text="22 Aug 2022"
+                    android:fontFamily="@font/figtree_medium"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_clicks"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_item_clicks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:lineHeight="12sp"
+                    android:textColor="#000000"
+                    android:text="2323"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="-2sp"
+                    android:fontFamily="@font/figtree_bold"
+
+                    />
+
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#999CA0"
+                    android:text="Clicks"
+                    android:fontFamily="@font/figtree_medium"
+
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:background="@drawable/bg_item_border">
+
+
+            <TextView
+                android:id="@+id/tv_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="https://samplelink.oia.bio/ashd..."
+                android:lineSpacingExtra="-1sp"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:textColor="#0E6FFF"
+                android:fontFamily="@font/figtree_medium"
+                />
+
+
+            <ImageView
+                android:id="@+id/iv_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_copy"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
